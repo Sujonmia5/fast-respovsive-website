@@ -34,6 +34,7 @@ header {
 
 .head-left,
 .head-right {
+    font-size: 14px;
     display: flex;
     margin-left: 10%;
     color: white;
@@ -42,7 +43,7 @@ header {
 .head-right a {
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     margin-right: 10px;
     justify-items: center;
@@ -181,10 +182,9 @@ hr {
 }
 
 .course-rating {
-    font-size: 12px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    font-size: 12px;
 }
 
 .fa-star.filled {
@@ -197,8 +197,9 @@ hr {
 
 .time {
     background-color: #FFE4E8;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 14px;
-    padding: 0px 10px 0px 10px;
     color: red;
 }
 
@@ -207,7 +208,7 @@ hr {
 ----------------------------*/
 @media only screen and (max-width:576px) {
     .container {
-        width: 100%;
+        width: 80%;
     }
 
     .players {
@@ -225,18 +226,20 @@ hr {
     }
 
     .course-container {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
     .all-course {
         grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
         align-items: center;
+        margin-left: 0%;
     }
 
     .courses {
-        width: 70%;
-        height: auto;
+        width: 50%;
+        height: 269.79px;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
@@ -244,8 +247,25 @@ hr {
         margin-right: auto;
     }
 
+    .courses .course img {
+        width: 200px;
+        height: 104px;
+        margin-left: 0%;
+    }
+
+    .course-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .course-author {
+        margin-top: 0%;
+        margin-bottom: 5px;
+    }
+
+
     .course-rating {
-        font-size: 16px;
+        font-size: 12px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -254,7 +274,7 @@ hr {
 
 @media only screen and (min-width:577px) and (max-width:992px) {
     .container {
-        width: 100%;
+        width: 90%;
     }
 
     .players {
@@ -290,13 +310,12 @@ hr {
     }
 
     .courses {
-        width: 70%;
+        width: 50%;
         height: auto;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 0%;
     }
 
     .course-rating {
